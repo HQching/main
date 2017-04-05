@@ -184,8 +184,7 @@ public class ModelManager extends ComponentManager implements Model {
                     .filter(keyword -> StringUtil.containsWordIgnoreCase(
                         task.getDescription().fullDescription, keyword))
                     .findAny()
-                    .isPresent() &&
-                    task.getStatus().toString().equalsIgnoreCase(ListUndoneCommand.COMMAND_WORD);
+                    .isPresent();
         }
 
         @Override
