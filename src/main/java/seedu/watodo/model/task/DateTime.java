@@ -86,10 +86,10 @@ public class DateTime {
 
         if (dateTime.get(Calendar.YEAR) != (currCal.get(Calendar.YEAR))) {
             //only shows the year if the date is not in the current year
-            SimpleDateFormat dateFormatter = new SimpleDateFormat("EEE d MMM yy, h.mma", Locale.ENGLISH);
+            SimpleDateFormat dateFormatter = new SimpleDateFormat("EEE d MMM yy h.mma", Locale.ENGLISH);
             return dateFormatter.format(dateTime.getTime());
         }
-        SimpleDateFormat dateFormatter = new SimpleDateFormat("EEE d MMM, h.mma", Locale.ENGLISH);
+        SimpleDateFormat dateFormatter = new SimpleDateFormat("EEE d MMM h.mma", Locale.ENGLISH);
         return dateFormatter.format(dateTime.getTime());
     }
 
